@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="stylesheet" href="styles.css
+  ">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family
+=Nunito+Sans:wght@200;300;400&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+  <!-- icons -->
+
+  <script src="https://kit.fontawesome.com/e027be6352.js" crossorigin="anonymous"></script>
+  <title>Love Score Calculator</title>
+
+<body>
+
+
+  <header>
+    <nav>
+      <a class="logo" href="index.html"><img src="" alt=""></a>
+
+      <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="">Love Score</a></li>
+          <li><a href="">Horoscope</a></li>
+          <li><a href="">Number of Children</a></li>
+          <li><a href="">Astrology</a></li>
+          <li><a href="">Zodiac Compatibilty</a></li>
+
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+
+    </nav>
+
+  </header>
+
+  <section class="loveScore">
+
+    <div class="title-text">
+      <h1>Find Your Love %</h1>
+    </div>
+
+    <div class="row">
+      <div class="yourName">
+        <h2>Your name</h2>
+        <div class="textBox"> <label for="yourName"></label>
+          <input type="text" id="yourName" placeholder=""></div>
+        <input type="radio" name="" id="Male" required>
+        <label for="yourName">Male</label>
+        <input type="radio" name="yourName" id="female" required>
+        <label for="yourName">Female</label>
+      </div>
+      <hr>
+      <div class="partnerName">
+        <h2>Partner's name</h2>
+        <div class="textBox"><label for="partnerName"></label>
+          <input type="text" id="partnerName" placeholder=""></div>
+        <input type="radio" name="partnerName" id="Male" required>
+        <label for="partnerNameMale">Male</label>
+        <input type="radio" name="partnerName" id="female" required>
+        <label for="partnerName">Female</label>
+      </div>
+      
+      
+    </div>
+   
+    <div>
+      <button class="button-63" role="button" onclick="calculateLoveScore()">Calculate Love Score</button>
+      <div id="result"></div>
+     
+    </div>
+    
+
+  
+
+
+  </section>
+
+
+  <section class="loveQuote">
+
+    <div class="title-text-box">
+      <h1>Quote of the day</h1>
+      <div>
+        <p>“As he read, I fell in love the way you fall asleep: slowly, and then all at once.” – John Green</p>
+      </div>
+    </div>
+
+    <div class="articles">
+
+      <div class="title-text">
+        <h2>Articles On Love And Romance</h2>
+      </div>
+
+      <div class="slideshow-container">
+
+        <div class="mySlides">
+          <img src="images/pexels-darlene-alderson-4389974.jpg" style="width:100%" alt="image">
+          <p><span>The Hitchhiker's Guide to the Kinky Quadrant: Don't forget your towel .</span> Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="mySlides">
+          <img src="images/pexels-jasmine-carter-888899.jpg" style="width:100%" alt="image">
+          <p><span>An Eternal Bond: Celebrate Your Love in His Light.</span> Ipsum is simply dummy text of the printing and typesetting
+            industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="mySlides">
+          <img src="images/pexels-kat-smith-568021.jpg" style="width:100%" alt="image">
+          <p> <span>So he left you, what now?</span> Ipsum is simply dummy text of the printing and typesetting
+            industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="mySlides">
+          <img src="images/pexels-lisa-fotios-918327.jpg" style="width:100%" alt="image">
+          <p> <span>Love Bites: Indulge in Aphrodisiac Delights</span> Ipsum is simply dummy text of the printing and
+            typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="mySlides">
+          <img src="images/pexels-pixabay-326612.jpg" style="width:100%" alt="image">
+          <p> <span>Cute illustrations. Number 5 will surprise you.</span>Lorem Ipsum is simply dummy text of the
+            printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+       
+      </div>
+
+    </div>
+
+  </section>
+
+  
+
+
+  <footer>
+    <div class="contact-us">
+      <div class="title-text">
+        <h3>Follow us on</h3>
+        <div class="icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-discord"></i>
+          <i class="fa-brands fa-tiktok"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <p>Authored by Tinotenda Victor Mujakachi</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+<script src="app.js"></script>
+
+
+</html>
